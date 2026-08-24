@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, TrendingUp } from "lucide-react";
-import { STATS_DATA } from "@/data/content";
 
 interface HeroProps {
   onOpenConsultation: () => void;
@@ -105,22 +104,6 @@ export default function Hero({ onOpenConsultation }: HeroProps) {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* High-Impact Stats Bar */}
-        <div className="mt-16 pt-10 border-t border-slate-200">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-            {STATS_DATA.map((stat, i) => (
-              <div key={i} className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-blue-300 transition-colors">
-                <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-                  {stat.value}
-                </div>
-                <div className="text-xs sm:text-sm font-semibold text-slate-500 mt-1">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
