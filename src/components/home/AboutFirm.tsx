@@ -54,7 +54,7 @@ export default function AboutFirm({ onOpenConsultation }: AboutFirmProps) {
 
             <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed">
               <p>
-                At <strong>Smart Promo LLC</strong>, we don&apos;t treat financial numbers as historical recordkeeping. We treat your balance sheet as a strategic roadmap for liquidity, tax defense, and valuation growth.
+                At <strong>Doxo Promo LLC</strong>, we don&apos;t treat financial numbers as historical recordkeeping. We treat your balance sheet as a strategic roadmap for liquidity, tax defense, and valuation growth.
               </p>
               <p className="text-sm sm:text-base text-slate-500">
                 Whether you are seeking institutional debt facilities, closing complex multi-state tax returns, or preparing your capitalization table for institutional investment, our team delivers the speed and rigor of a Tier-1 financial institution without the friction.
@@ -90,11 +90,11 @@ export default function AboutFirm({ onOpenConsultation }: AboutFirmProps) {
           </div>
         </div>
 
-        {/* Why Smart Promo LLC: Modern Comparison Matrix */}
+        {/* Why Doxo Promo LLC: Modern Comparison Matrix */}
         <div className="mt-16 bg-white rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-lg">
           <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-              Why Companies Transition to Smart Promo
+              Why Companies Transition to Doxo Promo
             </h3>
             <p className="text-sm text-slate-500">
               The concrete differences between conventional bookkeeping and our proactive financial architecture.
@@ -108,7 +108,7 @@ export default function AboutFirm({ onOpenConsultation }: AboutFirmProps) {
                   <th className="py-4 px-4">Financial Pillar</th>
                   <th className="py-4 px-4 text-slate-500">Traditional Accounting Firm</th>
                   <th className="py-4 px-4 text-blue-600 font-extrabold bg-blue-50/50 rounded-t-xl">
-                    Smart Promo LLC Advantage
+                    Doxo Promo LLC Advantage
                   </th>
                 </tr>
               </thead>
@@ -125,7 +125,7 @@ export default function AboutFirm({ onOpenConsultation }: AboutFirmProps) {
                     <td className="py-4 px-4 font-medium text-slate-900 text-xs sm:text-sm bg-blue-50/30">
                       <div className="flex items-center gap-2 text-emerald-600 font-semibold">
                         <Check className="w-4 h-4 shrink-0" />
-                        <span className="text-slate-900">{item.smartPromo}</span>
+                        <span className="text-slate-900">{item.doxoPromo}</span>
                       </div>
                     </td>
                   </tr>

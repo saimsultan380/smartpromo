@@ -83,11 +83,11 @@ export interface FAQItem {
 }
 
 export const SITE_CONFIG = {
-  name: "Smart Promo LLC",
+  name: "Doxo Promo LLC",
   tagline: "Precision Accounting & Strategic Financial Growth",
-  phone: "+1 (713) 919-9690",
-  email: "info@smart-promollc.us",
-  address: "18026 Barton Ridge Ln, Richmond, TX 77407",
+  phone: "+1 (832) 981-4200",
+  email: "info@doxopromollc.com",
+  address: "1000 Main St, Suite 2300, Houston, TX 77002",
   hours: "Mon - Fri: 9:00 AM - 6:00 PM CST",
   portalUrl: "#",
 };
@@ -528,7 +528,7 @@ export const ENGAGEMENT_STEPS = [
 
 export const SERVICE_FAQS: FAQItem[] = [
   {
-    question: "How quickly can Smart Promo LLC onboard our company and clean up past books?",
+    question: "How quickly can Doxo Promo LLC onboard our company and clean up past books?",
     answer:
       "Most client setups are completed within 5 to 7 business days. If you have historical backlog or unreconciled months, our dedicated clean-up team can bring multiple years of books up to audit-ready GAAP standards in under 2 weeks.",
   },
@@ -621,7 +621,7 @@ export const TESTIMONIALS: Testimonial[] = [
     stat: "$210,000",
     statLabel: "Tax Liability Saved in Year 1",
     content:
-      "Smart Promo revamped our entire financial infrastructure. They identified misclassified tax incentives and set up a loan package that funded our $2.4M fleet expansion in under 45 days.",
+      "Doxo Promo revamped our entire financial infrastructure. They identified misclassified tax incentives and set up a loan package that funded our $2.4M fleet expansion in under 45 days.",
     rating: 5,
   },
   {
@@ -661,26 +661,26 @@ export const COMPARISON_DATA = [
   {
     feature: "Monthly Close Timeline",
     traditional: "15 to 25 days delayed",
-    smartPromo: "3 business days guaranteed",
+    doxoPromo: "3 business days guaranteed",
   },
   {
     feature: "Tax Strategy",
     traditional: "Reactive once a year during tax season",
-    smartPromo: "Proactive quarterly tax harvesting & R&D credits",
+    doxoPromo: "Proactive quarterly tax harvesting & R&D credits",
   },
   {
     feature: "Executive CFO Advisory",
     traditional: "Basic data entry; no strategic advice",
-    smartPromo: "Dedicated CFO for runway & scenario planning",
+    doxoPromo: "Dedicated CFO for runway & scenario planning",
   },
   {
     feature: "Capital & Loan Support",
     traditional: "Refers you to high-interest brokers",
-    smartPromo: "Direct balance sheet structuring & lender packaging",
+    doxoPromo: "Direct balance sheet structuring & lender packaging",
   },
   {
     feature: "Technology & Security",
     traditional: "Clunky email spreadsheets",
-    smartPromo: "Bank-grade encrypted portal & automated feeds",
+    doxoPromo: "Bank-grade encrypted portal & automated feeds",
   },
 ];

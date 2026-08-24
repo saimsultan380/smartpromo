@@ -58,7 +58,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-              Smart Promo LLC is an essential financial pillar for high-growth enterprises, combining CPA rigor with modern executive advisory.
+              Doxo Promo LLC is an essential financial pillar for high-growth enterprises, combining CPA rigor with modern executive advisory.
             </p>
           </div>
         </section>
@@ -79,7 +79,7 @@ export default function AboutPage() {
 
               <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed">
                 <p>
-                  <strong>Smart Promo LLC</strong> acts as an essential pillar for businesses navigating complicated financial ecosystems. We combine decades of CPA expertise with modern advisory strategies to streamline loan approvals, enhance daily bookkeeping, and minimize tax burdens.
+                  <strong>Doxo Promo LLC</strong> acts as an essential pillar for businesses navigating complicated financial ecosystems. We combine decades of CPA expertise with modern advisory strategies to streamline loan approvals, enhance daily bookkeeping, and minimize tax burdens.
                 </p>
                 <p className="text-sm sm:text-base text-slate-500">
                   We are a firm rooted in trust. Whether you are an emerging startup seeking commercial funding or an established enterprise requiring airtight accounting, we engineer success through transparency and rigorous analysis.

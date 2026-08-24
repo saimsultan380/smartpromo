@@ -66,11 +66,11 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-700 to-indigo-600 flex items-center justify-center text-white font-black text-lg">
-                SP
+                DP
               </div>
               <div>
                 <span className="font-bold text-xl tracking-tight text-white">
-                  Smart Promo <span className="text-blue-400 font-medium text-xs px-1.5 py-0.5 rounded bg-blue-950 border border-blue-800 ml-1">LLC</span>
+                  Doxo Promo <span className="text-blue-400 font-medium text-xs px-1.5 py-0.5 rounded bg-blue-950 border border-blue-800 ml-1">LLC</span>
                 </span>
                 <p className="text-[11px] text-slate-400">Precision Financial Growth & Advisory</p>
               </div>
@@ -177,7 +177,7 @@ export default function Footer() {
 
         {/* Bottom Legal / Copyright */}
         <div className="mt-12 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} Smart Promo LLC. All Rights Reserved. Financial advisory services provided in compliance with state & federal regulations.</p>
+          <p>© {new Date().getFullYear()} Doxo Promo LLC. All Rights Reserved. Financial advisory services provided in compliance with state & federal regulations.</p>
           <div className="flex items-center gap-6">
             <Link href="/contact" className="hover:text-slate-300 transition-colors">Inquiry Portal</Link>
             <span className="text-slate-700">|</span>

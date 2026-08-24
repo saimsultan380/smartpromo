@@ -1,4 +1,4 @@
-# Smart Promo LLC - Enterprise Accounting & Financial Advisory
+# Doxo Promo LLC - Enterprise Accounting & Financial Advisory
 
 A modern, high-performance financial advisory web platform built with Next.js 16 (App Router), TypeScript, Tailwind CSS v4, Framer Motion, and Lucide React.
 
@@ -34,10 +34,10 @@ A modern, high-performance financial advisory web platform built with Next.js 16
 
 ```bash
 # Clone the repository
-git clone https://github.com/saimsultan380/smartpromo.git
+git clone https://github.com/saimsultan380/doxopromo.git
 
 # Navigate to project directory
-cd smartpromo
+cd doxopromo
 
 # Install dependencies
 npm install

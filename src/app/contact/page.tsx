@@ -239,7 +239,7 @@ export default function ContactPage() {
                         Inquiry Received & Dispatched!
                       </h3>
                       <p className="text-slate-600 text-sm max-w-md mx-auto">
-                        Thank you for contacting Smart Promo LLC. A Senior CPA specializing in <strong className="text-slate-900">{formData.areaOfInterest}</strong> will review your details and connect within 2 business hours.
+                        Thank you for contacting Doxo Promo LLC. A Senior CPA specializing in <strong className="text-slate-900">{formData.areaOfInterest}</strong> will review your details and connect within 2 business hours.
                       </p>
                     </div>
 
@@ -319,7 +319,7 @@ export default function ContactPage() {
                           <input
                             type="tel"
                             required
-                            placeholder="+1 (713) 000-0000"
+                            placeholder="+1 (832) 000-0000"
                             value={formData.phone}
                             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                             className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"

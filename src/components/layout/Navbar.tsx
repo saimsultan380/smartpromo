@@ -59,7 +59,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             </div>
             <div className="flex flex-col">
               <span className="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 leading-tight">
-                Smart Promo <span className="text-blue-600 font-semibold text-xs tracking-normal uppercase px-1.5 py-0.5 rounded bg-blue-50 border border-blue-200 ml-1">LLC</span>
+                Doxo Promo <span className="text-blue-600 font-semibold text-xs tracking-normal uppercase px-1.5 py-0.5 rounded bg-blue-50 border border-blue-200 ml-1">LLC</span>
               </span>
               <span className="text-[10px] uppercase font-semibold tracking-wider text-slate-500">
                 Precision Financial Architecture

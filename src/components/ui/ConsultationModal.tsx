@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { X, CheckCircle2, ArrowRight, ShieldCheck } from "lucide-react";
 import confetti from "canvas-confetti";
+import { SITE_CONFIG } from "@/data/content";
 
 interface ConsultationModalProps {
   isOpen: boolean;
@@ -73,7 +74,7 @@ export default function ConsultationModal({
                 Consultation Confirmed!
               </h3>
               <p className="text-slate-600 text-sm max-w-md mx-auto">
-                Thank you, <strong className="text-slate-900">{formData.name}</strong>. A Senior Financial Advisor from Smart Promo LLC will review your company profile and reach out within 2 business hours.
+                Thank you, <strong className="text-slate-900">{formData.name}</strong>. A Senior Financial Advisor from Doxo Promo LLC will review your company profile and reach out within 2 business hours.
               </p>
               <div className="bg-slate-50 p-4 rounded-xl text-xs text-slate-600 space-y-1 text-left max-w-sm mx-auto border border-slate-200">
                 <div className="flex justify-between">
@@ -85,7 +86,7 @@ export default function ConsultationModal({
                 <div className="flex justify-between">
                   <span>Direct Advisor Contact:</span>
                   <span className="font-semibold text-slate-900">
-                    +1 (713) 919-9690
+                    {SITE_CONFIG.phone}
                   </span>
                 </div>
               </div>
@@ -161,7 +162,7 @@ export default function ConsultationModal({
                     <input
                       type="tel"
                       required
-                      placeholder="+1 (713) 919-9690"
+                      placeholder="+1 (832) 000-0000"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600"

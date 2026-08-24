@@ -89,7 +89,7 @@ export default function ServicesPage() {
             </h1>
 
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
-              Smart Promo LLC provides full-spectrum financial tracking, compliance management, and strategic capital advisory engineered for scaling enterprises.
+              Doxo Promo LLC provides full-spectrum financial tracking, compliance management, and strategic capital advisory engineered for scaling enterprises.
             </p>
           </div>
         </section>

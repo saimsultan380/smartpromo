@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Smart Promo LLC | Precision Accounting & Strategic Financial Growth",
+  title: "Doxo Promo LLC | Precision Accounting & Strategic Financial Growth",
   description:
     "Enterprise-level Bookkeeping, Strategic Tax Architecture, Fractional CFO Advisory, and SBA Loan Consultation for high-growth businesses and corporations.",
   keywords: [
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     "Enterprise Bookkeeping",
     "SBA Loan Consultation",
     "Houston Financial Advisors",
-    "Smart Promo LLC",
+    "Doxo Promo LLC",
   ],
-  authors: [{ name: "Smart Promo LLC" }],
+  authors: [{ name: "Doxo Promo LLC" }],
 };
 
 export default function RootLayout({
