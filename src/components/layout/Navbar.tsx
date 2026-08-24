@@ -2,18 +2,27 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Menu, X, ArrowRight, ChevronRight, PhoneCall } from "lucide-react";
 import { SITE_CONFIG } from "@/data/content";
 
 interface NavbarProps {
-  onOpenConsultation: (service?: string) => void;
+  onOpenConsultation?: (service?: string) => void;
 }
 
 export default function Navbar({ onOpenConsultation }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleAction = () => {
+    if (onOpenConsultation) {
+      onOpenConsultation();
+    } else {
+      router.push("/contact/");
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,10 +34,10 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
 
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
-    { label: "Pricing", href: "/pricing" },
-    { label: "About Firm", href: "/about" },
-    { label: "Contact", href: "/contact" },
+    { label: "Services", href: "/services/" },
+    { label: "Pricing", href: "/pricing/" },
+    { label: "About Firm", href: "/about/" },
+    { label: "Contact", href: "/contact/" },
   ];
 
   return (
@@ -70,7 +79,9 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1 lg:space-x-2">
             {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+              const isActive =
+                pathname === link.href ||
+                (link.href !== "/" && (pathname === link.href.slice(0, -1) || pathname.startsWith(link.href)));
               return (
                 <Link
                   key={link.label}
@@ -98,7 +109,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
             </a>
 
             <button
-              onClick={() => onOpenConsultation()}
+              onClick={handleAction}
               className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-indigo-600 hover:from-blue-600 hover:to-indigo-500 text-white text-sm font-semibold shadow-md shadow-blue-700/20 hover:shadow-lg hover:shadow-blue-600/30 hover:-translate-y-0.5 active:translate-y-0 transition-all group"
             >
               <span>Get a Quote</span>
@@ -109,7 +120,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
           {/* Mobile Menu Toggle Button */}
           <div className="flex md:hidden items-center gap-2">
             <button
-              onClick={() => onOpenConsultation()}
+              onClick={handleAction}
               className="px-3 py-1.5 rounded-lg bg-blue-600 text-white text-xs font-semibold"
             >
               Get Quote
@@ -142,7 +153,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
-                  onOpenConsultation();
+                  handleAction();
                 }}
                 className="w-full py-3 rounded-xl bg-blue-600 text-white font-medium text-center text-sm shadow-md"
               >

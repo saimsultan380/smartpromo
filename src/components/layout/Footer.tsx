@@ -101,22 +101,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
-                <Link href="/services" className="hover:text-blue-400 transition-colors">Fractional CFO Advisory</Link>
+                <Link href="/services/" className="hover:text-blue-400 transition-colors">Fractional CFO Advisory</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-blue-400 transition-colors">Corporate Tax Optimization</Link>
+                <Link href="/services/" className="hover:text-blue-400 transition-colors">Corporate Tax Optimization</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-blue-400 transition-colors">SBA & Capital Structuring</Link>
+                <Link href="/services/" className="hover:text-blue-400 transition-colors">SBA & Capital Structuring</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-blue-400 transition-colors">Enterprise GAAP Bookkeeping</Link>
+                <Link href="/services/" className="hover:text-blue-400 transition-colors">Enterprise GAAP Bookkeeping</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-blue-400 transition-colors">13-Week Cash Flow Modeling</Link>
+                <Link href="/services/" className="hover:text-blue-400 transition-colors">13-Week Cash Flow Modeling</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-blue-400 transition-colors">Audit Strategy & Defense</Link>
+                <Link href="/services/" className="hover:text-blue-400 transition-colors">Audit Strategy & Defense</Link>
               </li>
             </ul>
           </div>
@@ -131,16 +131,16 @@ export default function Footer() {
                 <Link href="/" className="hover:text-blue-400 transition-colors">Home Overview</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-blue-400 transition-colors">Financial Services</Link>
+                <Link href="/services/" className="hover:text-blue-400 transition-colors">Financial Services</Link>
               </li>
               <li>
-                <Link href="/pricing" className="hover:text-blue-400 transition-colors">Transparent Pricing</Link>
+                <Link href="/pricing/" className="hover:text-blue-400 transition-colors">Transparent Pricing</Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-blue-400 transition-colors">About Our Firm</Link>
+                <Link href="/about/" className="hover:text-blue-400 transition-colors">About Our Firm</Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-blue-400 transition-colors">Contact Directory</Link>
+                <Link href="/contact/" className="hover:text-blue-400 transition-colors">Contact Directory</Link>
               </li>
             </ul>
           </div>
@@ -179,7 +179,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© {new Date().getFullYear()} Doxo Promo LLC. All Rights Reserved. Financial advisory services provided in compliance with state & federal regulations.</p>
           <div className="flex items-center gap-6">
-            <Link href="/contact" className="hover:text-slate-300 transition-colors">Inquiry Portal</Link>
+            <Link href="/contact/" className="hover:text-slate-300 transition-colors">Inquiry Portal</Link>
             <span className="text-slate-700">|</span>
             <span className="text-slate-400">SOC-2 Vault Certified</span>
           </div>
