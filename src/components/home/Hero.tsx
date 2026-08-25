@@ -1,110 +1,145 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, CheckCircle2, TrendingUp } from "lucide-react";
+import Link from "next/link";
+import { TrendingUp, FileText, Briefcase, ArrowRight } from "lucide-react";
 
 interface HeroProps {
   onOpenConsultation: () => void;
 }
 
 export default function Hero({ onOpenConsultation }: HeroProps) {
-  return (
-    <section id="hero" className="relative pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50/50">
-      {/* Subtle ambient lighting */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-blue-500/5 blur-3xl pointer-events-none -z-10" />
+  const featureCards = [
+    {
+      id: "cfo-advisory",
+      title: "CFO Advisory",
+      icon: TrendingUp,
+      iconBg: "bg-blue-50 text-blue-600 border-blue-200",
+      topAccent: "from-blue-500 to-indigo-500",
+      description:
+        "Comprehensive financial insights with a CFO perspective without the overhead. We provide forecasting, budgeting, and actionable intelligence.",
+    },
+    {
+      id: "tax-strategy",
+      title: "Tax Strategy",
+      icon: FileText,
+      iconBg: "bg-amber-50 text-amber-600 border-amber-200",
+      topAccent: "from-amber-400 to-orange-500",
+      description:
+        "Proactive tax planning ensures compliance and leverages corporate advantages. We handle preparation, filing, and year-round strategic advisory.",
+    },
+    {
+      id: "loan-consultation",
+      title: "Loan Consultation",
+      icon: Briefcase,
+      iconBg: "bg-rose-50 text-rose-600 border-rose-200",
+      topAccent: "from-rose-400 to-pink-500",
+      description:
+        "We simplify complex loan applications, guiding you through documentation, financial structuring, and application strategy for commercial success.",
+    },
+  ];
 
+  return (
+    <section id="hero" className="relative pt-12 pb-16 lg:pt-16 lg:pb-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        {/* Main Hero Split */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
           {/* Left Column: Copy & Actions */}
-          <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
             {/* Tag / Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
-              <span>Trusted Financial Advisors & CPAs</span>
+            <div className="inline-block">
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-blue-600">
+                Trusted Financial Advisors
+              </span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.1]">
-              Precision Accounting &{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-600">
-                Strategic Financial Growth
-              </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-5.5xl font-black tracking-tight text-slate-900 leading-[1.15]">
+              Precision Accounting &amp; Strategic Financial Growth
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Your strategic partner for enterprise-level Bookkeeping, Tax Optimization, Fractional CFO Advisory, and Loan Strategy. We simplify the complex world of finance so you can focus on building your enterprise.
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              Your strategic partner for enterprise-level Bookkeeping, Tax Optimization, CFO Advisory, and Loan Strategy. We simplify the complex world of finance so you can focus on building your business.
             </p>
 
             {/* Dual CTAs */}
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <Link
+                href="/services/"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-blue-900 hover:bg-blue-800 text-white font-bold text-sm tracking-wide transition-all shadow-md hover:shadow-lg"
+              >
+                <span>EXPLORE SERVICES</span>
+              </Link>
+
               <button
                 onClick={onOpenConsultation}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-600 hover:from-blue-600 hover:to-indigo-500 text-white font-semibold text-base shadow-xl shadow-blue-600/25 hover:shadow-blue-600/40 hover:-translate-y-0.5 active:translate-y-0 transition-all group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg bg-white border border-slate-300 hover:border-slate-400 text-slate-800 font-bold text-sm tracking-wide transition-all hover:bg-slate-50"
               >
-                <span>Speak to an Advisor</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <span>SPEAK TO AN ADVISOR</span>
               </button>
-
-              <a
-                href="#services"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-white border border-slate-300 text-slate-800 font-semibold text-base hover:bg-slate-50 hover:border-slate-400 transition-all shadow-sm"
-              >
-                <span>Explore Services</span>
-              </a>
-            </div>
-
-            {/* Micro-Trust Signals */}
-            <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs font-medium text-slate-600">
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>Zero Hidden Fees</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>CPA-Certified Supervision</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>Guaranteed 3-Day Close</span>
-              </div>
             </div>
           </div>
 
-          {/* Right Column: Clean Premium Executive Visual without floating clutter */}
-          <div className="lg:col-span-5 relative">
+          {/* Right Column: Boardroom Strategy Image */}
+          <div className="lg:col-span-6">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
-              {/* Main Executive Strategy Image */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-slate-900/10 border border-slate-200 bg-slate-100">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-slate-100">
                 <Image
                   src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1000&auto=format&fit=crop&q=80"
-                  alt="Senior Financial Advisory Strategy Session"
+                  alt="Financial Advisory Boardroom Strategy Meeting"
                   width={800}
-                  height={600}
+                  height={560}
                   priority
-                  className="w-full h-[440px] object-cover hover:scale-105 transition-transform duration-700 ease-out"
+                  className="w-full h-[360px] sm:h-[420px] object-cover"
                 />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-
-                {/* Single Clean Bottom Metrics Glass Pill */}
-                <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200/80 shadow-lg flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold">
-                      <TrendingUp className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <p className="text-[11px] font-semibold text-slate-500">Corporate Advisory Scope</p>
-                      <p className="text-sm font-bold text-slate-900">+38.4% Net Cash Optimization</p>
-                    </div>
-                  </div>
-                  <span className="text-[10px] font-extrabold px-2.5 py-1 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-lg">
-                    VERIFIED
-                  </span>
-                </div>
               </div>
             </div>
           </div>
+        </div>
+
+        {/* 3 Clean Feature / Service Cards Row */}
+        <div className="mt-16 lg:mt-24 grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          {featureCards.map((card) => {
+            const Icon = card.icon;
+            return (
+              <div
+                key={card.id}
+                onClick={onOpenConsultation}
+                className="group relative cursor-pointer p-8 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-slate-300 transition-all duration-300 flex flex-col justify-between"
+              >
+                {/* Top Colored Border Strip */}
+                <div
+                  className={`absolute top-0 left-8 right-8 h-1 rounded-b-full bg-gradient-to-r ${card.topAccent}`}
+                />
+
+                <div className="space-y-4">
+                  {/* Icon */}
+                  <div
+                    className={`w-12 h-12 rounded-xl border flex items-center justify-center ${card.iconBg} shadow-xs`}
+                  >
+                    <Icon className="w-6 h-6" />
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-xl font-bold text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">
+                    {card.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+
+                {/* Subtle Learn More Link */}
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-1 text-xs font-bold text-blue-600 group-hover:text-blue-700">
+                  <span>Learn More</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

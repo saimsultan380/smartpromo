@@ -10,17 +10,17 @@ export const metadata: Metadata = {
     canonical: "https://doxopromo.com/services/",
   },
   openGraph: {
-    title: "Financial & Advisory Services | Doxo Promo LLC",
+    title: "Financial & Advisory Services | Doxo Promo",
     description:
       "Explore our 6 financial pillars: Corporate Tax Optimization, Fractional CFO, SBA & Capital Structuring, Enterprise Bookkeeping, Audit Strategy, and Entity Formation.",
     url: "https://doxopromo.com/services/",
-    siteName: "Doxo Promo LLC",
+    siteName: "Doxo Promo",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Financial & Advisory Services | Doxo Promo LLC",
+    title: "Financial & Advisory Services | Doxo Promo",
     description:
       "Explore our 6 financial pillars: Corporate Tax Optimization, Fractional CFO, SBA & Capital Structuring, and Enterprise Bookkeeping.",
   },

@@ -6,8 +6,8 @@ import Footer from "@/components/layout/Footer";
 import { SITE_CONFIG } from "@/data/content";
 
 export const metadata = {
-  title: "404 - Page Not Found | Doxo Promo LLC",
-  description: "The page you requested could not be found. Return to Doxo Promo LLC home or explore our financial advisory services.",
+  title: "404 - Page Not Found | Doxo Promo",
+  description: "The page you requested could not be found. Return to Doxo Promo home or explore our financial advisory services.",
   robots: {
     index: false,
     follow: false,

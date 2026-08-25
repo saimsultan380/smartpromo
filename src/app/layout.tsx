@@ -25,8 +25,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://doxopromo.com"),
   title: {
-    default: "Doxo Promo LLC | Precision Accounting & Strategic Financial Growth",
-    template: "%s | Doxo Promo LLC",
+    default: "Doxo Promo | Precision Accounting & Strategic Financial Growth",
+    template: "%s | Doxo Promo",
   },
   description:
     "Enterprise-level Bookkeeping, Strategic Tax Architecture, Fractional CFO Advisory, and SBA Loan Consultation for high-growth businesses and corporations.",
@@ -34,16 +34,16 @@ export const metadata: Metadata = {
     "CFO Advisory",
     "Corporate Tax Planning",
     "Enterprise Bookkeeping",
-    "SBA Loan Consultation",
-    "Houston Financial Advisors",
-    "Doxo Promo LLC",
+    "Loan Consultation",
+    "Richmond TX Financial Advisors",
+    "Doxo Promo",
     "Virtual CFO",
     "Audit Defense Representation",
     "GAAP Accounting",
   ],
-  authors: [{ name: "Doxo Promo LLC", url: "https://doxopromo.com" }],
-  creator: "Doxo Promo LLC",
-  publisher: "Doxo Promo LLC",
+  authors: [{ name: "Doxo Promo", url: "https://doxopromo.com" }],
+  creator: "Doxo Promo",
+  publisher: "Doxo Promo",
   formatDetection: {
     email: true,
     address: true,
@@ -53,17 +53,17 @@ export const metadata: Metadata = {
     canonical: "https://doxopromo.com/",
   },
   openGraph: {
-    title: "Doxo Promo LLC | Precision Accounting & Strategic Financial Growth",
+    title: "Doxo Promo | Precision Accounting & Strategic Financial Growth",
     description:
       "Enterprise-level Bookkeeping, Strategic Tax Architecture, Fractional CFO Advisory, and SBA Loan Consultation for high-growth businesses.",
     url: "https://doxopromo.com/",
-    siteName: "Doxo Promo LLC",
+    siteName: "Doxo Promo",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Doxo Promo LLC | Precision Accounting & Strategic Financial Growth",
+    title: "Doxo Promo | Precision Accounting & Strategic Financial Growth",
     description:
       "Enterprise-level Bookkeeping, Strategic Tax Architecture, Fractional CFO Advisory, and SBA Loan Consultation for high-growth businesses.",
   },
@@ -93,21 +93,21 @@ export default function RootLayout({
     url: "https://doxopromo.com/",
     logo: "https://doxopromo.com/logo.png",
     description:
-      "Enterprise-grade Bookkeeping, Proactive Tax Strategy, Fractional CFO Advisory, and SBA Loan Consultation.",
+      "Enterprise-grade Bookkeeping, Proactive Tax Strategy, Fractional CFO Advisory, and Loan Consultation.",
     telephone: SITE_CONFIG.phone,
     email: SITE_CONFIG.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "1000 Main St, Suite 2300",
-      addressLocality: "Houston",
+      streetAddress: "18026 BARTON RIDGE LN",
+      addressLocality: "Richmond",
       addressRegion: "TX",
-      postalCode: "77002",
+      postalCode: "77407",
       addressCountry: "US",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "29.7589",
-      longitude: "-95.3677",
+      latitude: "29.6827",
+      longitude: "-95.7346",
     },
     openingHoursSpecification: [
       {
@@ -124,7 +124,7 @@ export default function RootLayout({
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Doxo Promo LLC",
+    name: "Doxo Promo",
     url: "https://doxopromo.com/",
   };
 

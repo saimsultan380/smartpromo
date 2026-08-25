@@ -9,17 +9,17 @@ export const metadata: Metadata = {
     canonical: "https://doxopromo.com/pricing/",
   },
   openGraph: {
-    title: "Transparent Pricing & Deliverables | Doxo Promo LLC",
+    title: "Transparent Pricing & Deliverables | Doxo Promo",
     description:
       "Scalable financial solutions with transparent deliverables. Compare bookkeeping, tax preparation, fractional CFO, and enterprise advisory packages.",
     url: "https://doxopromo.com/pricing/",
-    siteName: "Doxo Promo LLC",
+    siteName: "Doxo Promo",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Transparent Pricing & Deliverables | Doxo Promo LLC",
+    title: "Transparent Pricing & Deliverables | Doxo Promo",
     description:
       "Scalable financial solutions with transparent deliverables. Compare bookkeeping, tax preparation, fractional CFO, and enterprise advisory packages.",
   },

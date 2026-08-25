@@ -83,12 +83,12 @@ export interface FAQItem {
 }
 
 export const SITE_CONFIG = {
-  name: "Doxo Promo LLC",
-  tagline: "Precision Accounting & Strategic Financial Growth",
-  phone: "+1 (832) 981-4200",
-  email: "info@doxopromollc.com",
-  address: "1000 Main St, Suite 2300, Houston, TX 77002",
-  hours: "Mon - Fri: 9:00 AM - 6:00 PM CST",
+  name: "Doxo Promo",
+  tagline: "Authoritative financial consulting, commercial loan strategy, and enterprise accounting services ensuring long-term fiscal stability.",
+  phone: "+1 (713) 919-9690",
+  email: "info@doxopromo.com",
+  address: "18026 BARTON RIDGE LN, RICHMOND, TX 77407",
+  hours: "Mon - Fri | 9:00 AM - 6:00 PM",
   portalUrl: "#",
 };
 
@@ -256,7 +256,7 @@ export const PRICING_PACKAGES: DetailedPricingPackage[] = [
     turnaround: "Continuous Proactive Advisory",
     features: [
       "Proactive Year-Round Tax Planning Sessions",
-      "LLC, S-Corp, & C-Corp Tax Optimization",
+      "Business Entity, S-Corp, & C-Corp Tax Optimization",
       "Complex Multi-State Tax Apportionment Filings",
       "Estimated Quarterly Tax Calculations & Vouchers",
       "R&D Credit & Section 179 Depreciation Harvesting",
@@ -483,11 +483,11 @@ export const SERVICES_PAGE_DATA: ServiceItem[] = [
     badge: "Solid Foundation",
     tagline: "Build on rock-solid legal and financial architecture for maximum asset protection and tax efficiency.",
     description:
-      "Our team advises on optimal corporate structuring (LLC, S-Corp, C-Corp, Holding Entities) to shield personal assets, minimize self-employment taxes, and prepare your business for scalable investment.",
+      "Our team advises on optimal corporate structuring (Partnership, S-Corp, C-Corp, Holding Entities) to shield personal assets, minimize self-employment taxes, and prepare your business for scalable investment.",
     iconName: "Building2",
     metrics: "100% Tax Optimized From Day 1",
     features: [
-      "Entity Selection Strategy (LLC vs S-Corp vs C-Corp)",
+      "Entity Selection Strategy (Partnership vs S-Corp vs C-Corp)",
       "Multi-Tier Holding & Operating Company Architecture",
       "EIN, State Registrations & Operating Agreement Consultation",
       "Initial Accounting System & Chart of Accounts Setup",
@@ -528,7 +528,7 @@ export const ENGAGEMENT_STEPS = [
 
 export const SERVICE_FAQS: FAQItem[] = [
   {
-    question: "How quickly can Doxo Promo LLC onboard our company and clean up past books?",
+    question: "How quickly can Doxo Promo onboard our company and clean up past books?",
     answer:
       "Most client setups are completed within 5 to 7 business days. If you have historical backlog or unreconciled months, our dedicated clean-up team can bring multiple years of books up to audit-ready GAAP standards in under 2 weeks.",
   },

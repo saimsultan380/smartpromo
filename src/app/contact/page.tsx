@@ -5,22 +5,22 @@ import { SITE_CONFIG } from "@/data/content";
 export const metadata: Metadata = {
   title: "Contact Our Advisory Team | Confidential Financial Consultation",
   description:
-    "Connect directly with senior CPAs and financial advisors at Doxo Promo LLC. Request a confidential strategy briefing covered under strict NDA.",
+    "Connect directly with senior CPAs and financial advisors at Doxo Promo. Request a confidential strategy briefing covered under strict NDA.",
   alternates: {
     canonical: "https://doxopromo.com/contact/",
   },
   openGraph: {
-    title: "Contact Our Advisory Team | Doxo Promo LLC",
+    title: "Contact Our Advisory Team | Doxo Promo",
     description:
       "Initiate a confidential discussion with our senior CPAs and corporate financial advisors. Direct phone, email, and consultation intake.",
     url: "https://doxopromo.com/contact/",
-    siteName: "Doxo Promo LLC",
+    siteName: "Doxo Promo",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Our Advisory Team | Doxo Promo LLC",
+    title: "Contact Our Advisory Team | Doxo Promo",
     description:
       "Initiate a confidential discussion with our senior CPAs and corporate financial advisors.",
   },
@@ -49,7 +49,7 @@ export default function ContactPage() {
   const contactPageSchema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    name: "Contact Doxo Promo LLC",
+    name: "Contact Doxo Promo",
     url: "https://doxopromo.com/contact/",
     description:
       "Initiate a confidential financial strategy briefing with licensed CPAs and senior advisors.",
@@ -60,10 +60,10 @@ export default function ContactPage() {
       email: SITE_CONFIG.email,
       address: {
         "@type": "PostalAddress",
-        streetAddress: "1000 Main St, Suite 2300",
-        addressLocality: "Houston",
+        streetAddress: "18026 BARTON RIDGE LN",
+        addressLocality: "Richmond",
         addressRegion: "TX",
-        postalCode: "77002",
+        postalCode: "77407",
         addressCountry: "US",
       },
     },

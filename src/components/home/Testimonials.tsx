@@ -20,7 +20,7 @@ export default function Testimonials() {
           </h2>
 
           <p className="text-slate-600 text-base sm:text-lg">
-            See how founders, CEOs, and CFOs rely on Doxo Promo LLC to protect balance sheets and scale capital.
+            See how founders, CEOs, and CFOs rely on Doxo Promo to protect balance sheets and scale capital.
           </p>
         </div>
 
