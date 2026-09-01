@@ -85,9 +85,9 @@ export interface FAQItem {
 export const SITE_CONFIG = {
   name: "Doxo Promo",
   tagline: "Authoritative financial consulting, commercial loan strategy, and enterprise accounting services ensuring long-term fiscal stability.",
-  phone: "+1 (713) 919-9690",
+  phone: "+1 (269) 256-3703",
   email: "info@doxopromo.com",
-  address: "18026 BARTON RIDGE LN, RICHMOND, TX 77407",
+  address: "7901 4TH ST N STE 300, ST PETERSBURG, FL 33702",
   hours: "Mon - Fri | 9:00 AM - 6:00 PM",
   portalUrl: "#",
 };

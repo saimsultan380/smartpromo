@@ -17,11 +17,14 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ConsultationModal from "@/components/ui/ConsultationModal";
 import { SITE_CONFIG } from "@/data/content";
+import { submitContactForm } from "@/lib/web3forms";
 
 export default function ContactView() {
   const [modalOpen, setModalOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [formData, setFormData] = useState({
     email: "",
     phone: "",
@@ -34,8 +37,24 @@ export default function ContactView() {
     setTimeout(() => setCopied(false), 2500);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitting(true);
+    setSubmitError("");
+
+    const result = await submitContactForm({
+      ...formData,
+      subject: "Contact Page Inquiry - Doxo Promo",
+      source: "contact-page",
+    });
+
+    setSubmitting(false);
+
+    if (!result.success) {
+      setSubmitError("Unable to send your inquiry. Please try again or email us directly.");
+      return;
+    }
+
     setSubmitted(true);
 
     try {
@@ -52,6 +71,7 @@ export default function ContactView() {
 
   const handleReset = () => {
     setSubmitted(false);
+    setSubmitError("");
     setFormData({
       email: "",
       phone: "",
@@ -148,6 +168,7 @@ export default function ContactView() {
                         </label>
                         <input
                           type="email"
+                          name="email"
                           required
                           placeholder="marcus@company.com"
                           value={formData.email}
@@ -163,8 +184,9 @@ export default function ContactView() {
                         </label>
                         <input
                           type="tel"
+                          name="phone"
                           required
-                          placeholder="+1 (713) 919-9690"
+                          placeholder="+1 (269) 256-3703"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
@@ -178,21 +200,31 @@ export default function ContactView() {
                         </label>
                         <input
                           type="text"
+                          name="address"
                           required
-                          placeholder="18026 Barton Ridge Ln, Richmond, TX 77407"
+                          placeholder="7901 4th St N STE 300, St Petersburg, FL 33702"
                           value={formData.address || ""}
                           onChange={(e) => setFormData({ ...formData, address: e.target.value })}
                           className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"
                         />
                       </div>
 
+                      {submitError && (
+                        <p className="text-sm font-medium text-red-600" role="alert">
+                          {submitError}
+                        </p>
+                      )}
+
                       {/* Submit Button */}
                       <button
                         type="submit"
-                        className="w-full py-4 px-6 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 transition-all flex items-center justify-center gap-2 group uppercase tracking-wider"
+                        disabled={submitting}
+                        className="w-full py-4 px-6 bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 disabled:cursor-not-allowed text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 transition-all flex items-center justify-center gap-2 group uppercase tracking-wider"
                       >
-                        <span>SUBMIT INQUIRY</span>
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        <span>{submitting ? "SENDING..." : "SUBMIT INQUIRY"}</span>
+                        {!submitting && (
+                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        )}
                       </button>
                     </form>
                   </div>

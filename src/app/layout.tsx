@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "Corporate Tax Planning",
     "Enterprise Bookkeeping",
     "Loan Consultation",
-    "Richmond TX Financial Advisors",
+    "St Petersburg FL Financial Advisors",
     "Doxo Promo",
     "Virtual CFO",
     "Audit Defense Representation",
@@ -98,16 +98,16 @@ export default function RootLayout({
     email: SITE_CONFIG.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "18026 BARTON RIDGE LN",
-      addressLocality: "Richmond",
-      addressRegion: "TX",
-      postalCode: "77407",
+      streetAddress: "7901 4th St N STE 300",
+      addressLocality: "St Petersburg",
+      addressRegion: "FL",
+      postalCode: "33702",
       addressCountry: "US",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "29.6827",
-      longitude: "-95.7346",
+      latitude: "27.844426",
+      longitude: "-82.638192",
     },
     openingHoursSpecification: [
       {

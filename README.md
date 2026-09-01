@@ -34,10 +34,10 @@ A modern, high-performance financial advisory web platform built with Next.js 16
 
 ```bash
 # Clone the repository
-git clone https://github.com/saimsultan380/doxopromo.git
+git clone https://github.com/saimsultan380/smartpromo.git
 
 # Navigate to project directory
-cd doxopromo
+cd smartpromo
 
 # Install dependencies
 npm install
