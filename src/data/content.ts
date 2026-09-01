@@ -90,6 +90,8 @@ export const SITE_CONFIG = {
   address: "7901 4TH ST N STE 300, ST PETERSBURG, FL 33702",
   hours: "Mon - Fri | 9:00 AM - 6:00 PM",
   portalUrl: "#",
+  logoPath: "/logo-icon.svg",
+  logoUrl: "https://doxopromo.com/logo-icon.svg",
 };
 
 export const CORE_VALUES: CoreValueItem[] = [

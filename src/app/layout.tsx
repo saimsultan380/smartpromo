@@ -52,6 +52,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://doxopromo.com/",
   },
+  icons: {
+    icon: [
+      { url: SITE_CONFIG.logoPath, type: "image/svg+xml" },
+      { url: "/icon", type: "image/png", sizes: "32x32" },
+    ],
+    shortcut: SITE_CONFIG.logoPath,
+    apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
+  },
   openGraph: {
     title: "Doxo Promo | Precision Accounting & Strategic Financial Growth",
     description:
@@ -60,12 +68,21 @@ export const metadata: Metadata = {
     siteName: "Doxo Promo",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Doxo Promo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Doxo Promo | Precision Accounting & Strategic Financial Growth",
     description:
       "Enterprise-level Bookkeeping, Strategic Tax Architecture, Fractional CFO Advisory, and SBA Loan Consultation for high-growth businesses.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
@@ -91,7 +108,12 @@ export default function RootLayout({
     name: SITE_CONFIG.name,
     alternateName: "Doxo Promo",
     url: "https://doxopromo.com/",
-    logo: "https://doxopromo.com/logo.png",
+    logo: {
+      "@type": "ImageObject",
+      url: SITE_CONFIG.logoUrl,
+      width: 512,
+      height: 512,
+    },
     description:
       "Enterprise-grade Bookkeeping, Proactive Tax Strategy, Fractional CFO Advisory, and Loan Consultation.",
     telephone: SITE_CONFIG.phone,
@@ -126,6 +148,14 @@ export default function RootLayout({
     "@type": "WebSite",
     name: "Doxo Promo",
     url: "https://doxopromo.com/",
+    publisher: {
+      "@type": "Organization",
+      name: "Doxo Promo",
+      logo: {
+        "@type": "ImageObject",
+        url: SITE_CONFIG.logoUrl,
+      },
+    },
   };
 
   return (

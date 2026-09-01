@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Menu, X, ArrowRight, ChevronRight, PhoneCall } from "lucide-react";
 import { SITE_CONFIG } from "@/data/content";
+import LogoMark from "@/components/brand/LogoMark";
 
 interface NavbarProps {
   onOpenConsultation?: (service?: string) => void;
@@ -52,20 +53,7 @@ export default function Navbar({ onOpenConsultation }: NavbarProps) {
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-700 via-blue-600 to-indigo-500 flex items-center justify-center text-white shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="w-5 h-5"
-              >
-                <path d="m3 3 7 7-7 7" />
-                <path d="m13 3 7 7-7 7" />
-              </svg>
-            </div>
+            <LogoMark className="group-hover:scale-105 transition-transform" />
             <div className="flex flex-col">
               <span className="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 leading-tight">
                 Doxo Promo

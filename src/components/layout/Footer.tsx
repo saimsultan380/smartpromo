@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Clock } from "lucide-react";
 import { SITE_CONFIG } from "@/data/content";
+import LogoMark from "@/components/brand/LogoMark";
 
 export default function Footer() {
   return (
@@ -12,20 +13,7 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="lg:col-span-4 space-y-4">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-700 via-blue-600 to-indigo-500 flex items-center justify-center text-white shadow-md shadow-blue-500/20">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-5 h-5"
-                >
-                  <path d="m3 3 7 7-7 7" />
-                  <path d="m13 3 7 7-7 7" />
-                </svg>
-              </div>
+              <LogoMark />
               <div className="flex flex-col">
                 <span className="font-extrabold text-xl tracking-tight text-white leading-tight">
                   Doxo Promo
