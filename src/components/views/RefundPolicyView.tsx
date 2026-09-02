@@ -40,47 +40,39 @@ export default function RefundPolicyView() {
               <RefreshCcw className="w-6 h-6 text-blue-600 shrink-0 mt-1" />
               <div className="space-y-1">
                 <h2 className="text-base font-bold text-slate-900 m-0">
-                  Transparent Billing &amp; Satisfaction Guarantee
+                  One-Time Services Only
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 m-0">
-                  At <strong>{SITE_CONFIG.name}</strong>, we stand behind the quality, accuracy, and rigorous execution of our financial advisory services. This policy clearly defines our terms for cancellations, service adjustments, and refunds.
+                  At <strong>{SITE_CONFIG.name}</strong>, all engagements are <strong>one-time project-based services</strong>. We do <strong>not</strong> offer recurring subscriptions, monthly retainers, or automatic renewals. You are billed only for the specific engagement you approve. This policy defines our terms for cancellations and refunds.
                 </p>
               </div>
             </div>
 
             <div className="space-y-4">
               <h2 className="text-2xl font-black text-slate-900 tracking-tight">
-                1. Monthly Recurring Subscriptions (Bookkeeping &amp; Fractional CFO)
+                1. Service Model
               </h2>
               <p>
-                For clients on monthly retainer plans (Basic Bookkeeping, Pro Bookkeeping, Virtual CFO Advisory):
+                Every service we provide—including bookkeeping cleanup, tax preparation, financial advisory, entity setup, and loan consultation—is structured as a one-time engagement with a defined scope and fixed or project-based fee. There are no auto-renewals and no recurring charges after the engagement is complete.
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-slate-600">
-                <li>
-                  <strong>Cancellation:</strong> You may cancel your recurring monthly service at any time with a 15-day written notice prior to your next billing cycle.
-                </li>
-                <li>
-                  <strong>Refunds:</strong> Once a monthly cycle has commenced and work (reconciliations, payroll runs, financial reporting) has been performed, the fee for that billing cycle is non-refundable. However, no subsequent months will be charged following cancellation.
-                </li>
-              </ul>
             </div>
 
             <div className="space-y-4">
               <h2 className="text-2xl font-black text-slate-900 tracking-tight">
-                2. One-Time Projects &amp; Tax Preparation Engagements
+                2. Cancellation &amp; Refund Terms
               </h2>
               <p>
-                For standalone tax filings, historical book cleanup, entity setup, or debt financing advisory:
+                For one-time projects and tax preparation engagements:
               </p>
               <ul className="list-disc pl-5 space-y-2 text-slate-600">
                 <li>
-                  <strong>Pre-Work Cancellation:</strong> If you cancel within 48 hours of engagement and before our advisory team has initiated document review or reconciliation, a 100% refund of your initial deposit will be issued.
+                  <strong>Pre-Work Cancellation:</strong> If you cancel within 48 hours of engagement and before our advisory team has initiated document review or project work, a 100% refund of your payment will be issued.
                 </li>
                 <li>
-                  <strong>Work-in-Progress:</strong> If work has already commenced, fees will be prorated based on recorded hours and completed milestones, with any unspent retainer returned.
+                  <strong>Work-in-Progress:</strong> If work has already commenced, fees will be prorated based on recorded hours and completed milestones, with any unused portion of your payment returned.
                 </li>
                 <li>
-                  <strong>Completed Deliverables:</strong> Once tax returns have been finalized and filed with the IRS/state, or finalized audit books delivered, project fees are strictly non-refundable due to the specialized professional labor expended.
+                  <strong>Completed Deliverables:</strong> Once tax returns have been finalized and filed with the IRS/state, or finalized books and deliverables have been delivered, project fees are strictly non-refundable due to the specialized professional labor expended.
                 </li>
               </ul>
             </div>

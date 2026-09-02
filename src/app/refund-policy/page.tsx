@@ -4,14 +4,14 @@ import RefundPolicyView from "@/components/views/RefundPolicyView";
 export const metadata: Metadata = {
   title: "Refund & Cancellation Policy | Transparent Billing Guarantee",
   description:
-    "Review the refund, cancellation, and billing policies of Doxo Promo. Transparent terms for monthly bookkeeping, fractional CFO retainers, and tax filings.",
+    "Review the refund and cancellation policies of Doxo Promo. All services are one-time engagements with no recurring subscriptions or monthly retainers.",
   alternates: {
     canonical: "https://doxopromo.com/refund-policy/",
   },
   openGraph: {
     title: "Refund Policy | Doxo Promo",
     description:
-      "Review the refund, cancellation, and billing policies of Doxo Promo. Transparent terms for advisory retainers.",
+      "Review the refund and cancellation policies of Doxo Promo. One-time services only—no recurring billing.",
     url: "https://doxopromo.com/refund-policy/",
     siteName: "Doxo Promo",
     locale: "en_US",
